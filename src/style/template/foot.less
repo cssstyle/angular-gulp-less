@@ -1,0 +1,39 @@
+.foot{
+  background-color: #fff;
+  border-top:1px solid @lineColor;
+  position:fixed;
+  left:0;
+  right:0;
+  bottom: 0;
+  height:40px;
+  font-size: 0;
+  li{
+    font-size: 20px;
+    width:33%;
+    color:@muteColor;
+    line-height: 40px;
+    &.select{
+      background-color:@highlightBgColor;
+      color:@highlightColor;
+    }
+    i{
+      padding:0 3px;
+    }
+  }
+
+  .icon-document{
+    background: url("../../image/document.png") no-repeat;
+    width:25px;
+    height:21px;
+  }
+  .icon-search{
+    background: url("../../image/search.png") no-repeat;
+    width:24px;
+    height:24px;
+  }
+  .icon-me{
+    background: url("../../image/my.png") no-repeat;
+    width:23px;
+    height:25px;
+  }
+}

@@ -1,0 +1,75 @@
+.login{
+  background-image: url("../image/background.png");
+  background-size:100% 100%;
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  form{
+    .mt(260);
+    .form-line{
+      .w(300);
+      margin: 0 auto;
+      overflow: hidden;
+      input{
+        .w(220);
+        .h(40);
+        border:none;
+        outline: none;
+        padding-left: 80px;
+        background: @formBgColor;
+        color:@defaultColor;
+      }
+      & input::-webkit-input-placeholder{
+        color:@defaultColor;
+      }
+      &:first-child input{
+        border-bottom: 1px solid @defaultColor;
+      }
+      .account{
+        background-color: @formSpanBgColor;
+        background-image: url("../image/account.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        .w(50);
+        .h(40);
+      }
+      .lock{
+        background-color: @formSpanBgColor;
+        background-image: url("../image/lock.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        .w(50);
+        .h(40);
+      }
+
+      p{
+        position: absolute;
+        .t(14);
+        .r(0);
+        .fs(12);
+        color:red;
+      }
+    }
+    button{
+      .w(300);
+      .h(35);
+      outline:none;
+      border: none;
+      .fs(22);
+      font-weight: 700;
+      &.login-btn{
+        background:@headBgColor;
+        .mt(75);
+        color: @defaultColor;
+      }
+      &.register-btn{
+        background: @btnBgColor;
+        color:@headBgColor;
+        .mt(20);
+        border:1px solid @headBgColor
+      }
+    }
+  }
+}
